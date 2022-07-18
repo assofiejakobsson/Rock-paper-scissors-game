@@ -2,11 +2,13 @@
 
 const computerChoiseDisplay = document.getElementById("computer-choise");
 const yourChoiseDisplay = document.getElementById("your-choise");
-const resultDisplay = document.getElementById("result");
+const messageDisplay = document.getElementById("message");
+const scoreDisplay = document.getElementById("score");
 const allGameChoise = document.querySelectorAll("button");
 let yourChoise
 let computerChoise
-let result
+let message
+let yourScore
 
 //Grab all choise btn and functions for the users and computers choise
 
@@ -14,7 +16,8 @@ allGameChoise.forEach(allGameChoise => allGameChoise.addEventListener('click', (
     yourChoise = e.target.id
     yourChoiseDisplay.innerHTML = yourChoise
     generateComputerChoise()
-    getResult()
+    getMessage()
+    getScore()
 }))
 
 // Funktion for computer choise
@@ -36,24 +39,68 @@ function generateComputerChoise() {
 
 // Funktion for the result between winner and loser
 
-function getResult() {
+function getMessage() {
     if (computerChoise === yourChoise) {
-        result = "It's a draw"
+        message = "It's a draw"
     }
     if (computerChoise === "rock" && yourChoise === "paper") {
-        result = "You win"
+        message = "You win"
+        
     }
     if (computerChoise === "rock" && yourChoise === "scissor") {
-        result = "You lose"
+        message = "You lose"
     }
     if (computerChoise === "paper" && yourChoise === "scissor") {
-        result = "You win"
+        message = "You win"
+        
     }
     if (computerChoise === "paper" && yourChoise === "rock") {
-        result = "You win"
+        message = "You win"
+        
     }
     if (computerChoise === "scissor" && yourChoise === "paper") {
-        result = "You lose"
+        message = "You lose"
     }
-    resultDisplay.innerHTML = result
+    if (computerChoise === "scissor" && yourChoise === "rock") {
+        message = "You win"
+        
+    messageDisplay.innerHTML = message
+}
+
+function incrementYourScore() {
+    let startScore = parseInt(document.getElementById("your-score").innerText);
+    document.getElementById("your-score").innerText = ++startScore;
+}
+
+function incrementComputerScore() {
+    let startScore = parseInt(document.getElementById("computer-score").innerText);
+    document.getElementById("computer-score").innerText = ++startScore;
+}
+
+
+
+function getScore() {
+    
+    if (computerChoise === yourChoise) {
+        
+    }
+    if (computerChoise === "rock" && yourChoise === "paper") {
+        incrementYourScore("your-score")
+    }
+    if (computerChoise === "rock" && yourChoise === "scissor") {
+        incrementComputerScore("computer-score")
+    }
+    if (computerChoise === "paper" && yourChoise === "scissor") {
+        incrementYourScore("your-score")
+    }
+    if (computerChoise === "paper" && yourChoise === "rock") {
+        incrementComputerScore("computer-score")
+    }
+    if (computerChoise === "scissor" && yourChoise === "paper") {
+        incrementComputerScore("computer-score")
+    }
+    if (computerChoise === "scissor" && yourChoise === "rock") {
+        incrementYourScore("your-score")
+    }
+    
 }
