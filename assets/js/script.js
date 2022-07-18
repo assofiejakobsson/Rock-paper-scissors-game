@@ -9,6 +9,7 @@ let yourChoise
 let computerChoise
 let message
 let yourScore
+let coputerScore
 
 //Grab all choise btn and functions for the users and computers choise
 
@@ -63,19 +64,23 @@ function getMessage() {
     }
     if (computerChoise === "scissor" && yourChoise === "rock") {
         message = "You win"
-        
+    }
     messageDisplay.innerHTML = message
 }
 
 function incrementYourScore() {
     let startScore = parseInt(document.getElementById("your-score").innerText);
-    document.getElementById("your-score").innerText = ++startScore;
+    document.getElementById("your-score").innerText =  ++startScore;
+    
 }
 
 function incrementComputerScore() {
     let startScore = parseInt(document.getElementById("computer-score").innerText);
     document.getElementById("computer-score").innerText = ++startScore;
+    
+    
 }
+
 
 
 
@@ -104,3 +109,5 @@ function getScore() {
     }
     
 }
+
+
