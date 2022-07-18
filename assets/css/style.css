@@ -1,3 +1,44 @@
 body {
-    background-color: aqua;
+    background-color: azure;
 }
+
+/*game.html*/
+
+#home-container {
+    max-width: 600px;
+    width: 100%;
+    min-height: 400px;
+    background: url("../images/background.jpg") no-repeat center center ;
+    text-align: center;
+    padding: 25px;
+    margin: 25px;
+ 
+ 
+
+}
+
+a#btn-play {
+    text-decoration: none;
+    
+    
+}
+
+#btn-play {
+    padding: 3px 10px 3px 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+    font-size: 160%;
+   
+}
+
+#btn-play:hover {
+    color: black;
+    
+ }
+ 
+ 
+ 
+ 
+ 
+ 
