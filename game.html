@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,19 +8,40 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Rock, paper, scissors game</title>
 </head>
-<body>
-    <h2>Computer Choise:<span id="computer-choise"></span></h2>
-    <h2>Your Choise:<span id="your-choise"></span></h2>
-    <h2>message<span id="message"></span></h2>
-    <p>Your score: <span id="your-score">0</span></p>
-    <p>Computer score: <span id="computer-score">0</span></p>
 
-    <p>Make a choice:</p>
-    <button class="btn-choice" aria-label="Rock" id="rock">1</button>
-    <button class="btn-choice" aria-label="Paper" id="paper">2</button>
-    <button class="btn-choice" aria-label="Scissor" id="scissor">3</button>
-    
-  
+<body>
+    <!--Game area-->
+    <div id="game-container">
+        <div nav-home>
+            <a href="game.html" id="btn-home" target="_blank" rel="noopener"
+                aria-label="Go back home(open in new tab">Home</a>
+
+        </div>
+        <!--choise-message, score and result-message area-->
+        <div id="game-overview">
+            <div id="user-choise-score">
+                <h2>Your Choise:<span id="your-choise"></span></h2>
+                <p>Computer score: <span id="computer-score">0</span></p> 
+            </div>
+            <div id="result-message" >
+                <h2>message<span id="message"></span></h2>
+            </div>
+            <div id="computer-choise-score">
+                <h2>Computer Choise:<span id="computer-choise"></span></h2>
+                <p>Your score: <span id="your-score">0</span></p>
+            </div>
+        </div>
+        <!--rock, paper, scissors buttons-->
+        <div id="option-area">
+            <p>Make a choice:</p>
+            <button class="btn-choice" aria-label="Rock" id="rock">1</button>
+            <button class="btn-choice" aria-label="Paper" id="paper">2</button>
+            <button class="btn-choice" aria-label="Scissor" id="scissor">3</button>
+        </div>
+        
+
+    </div>
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>
