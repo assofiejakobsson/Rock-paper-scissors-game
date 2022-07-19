@@ -67,9 +67,9 @@ a#btn-home {
 
  #game-overview {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: space-around;
-    font-size: 75%;
+    
  }
 
  #user-choise-score {
@@ -80,9 +80,29 @@ a#btn-home {
    
  }
 
+ #option-area {
 
-img {
+ }
+
+ button#rock {
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
+    background: url("../images/rock.jpg") no-repeat center center;
+ }
+
+ button#paper {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: url("../images/paper.JPG") no-repeat center center;
+ }
+
+ button#scissor {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: url("../images/scissor.jpg") no-repeat center center;
  }
 
  

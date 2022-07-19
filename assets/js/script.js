@@ -56,7 +56,7 @@ function getMessage() {
         
     }
     if (computerChoise === "paper" && yourChoise === "rock") {
-        message = "You win"
+        message = "You lose"
         
     }
     if (computerChoise === "scissor" && yourChoise === "paper") {
