@@ -38,7 +38,7 @@ function generateComputerChoise() {
     computerChoiseDisplay.innerHTML = computerChoise
 }
 
-// Funktion for the result between winner and loser
+// Funktion for the display message depends on the users are winning or losing
 
 function getMessage() {
     if (computerChoise === yourChoise) {
@@ -68,11 +68,15 @@ function getMessage() {
     messageDisplay.innerHTML = message
 }
 
+//Funktion for the users score count
+
 function incrementYourScore() {
     let startScore = parseInt(document.getElementById("your-score").innerText);
     document.getElementById("your-score").innerText =  ++startScore;
     
 }
+
+//Funktion for the computers score count
 
 function incrementComputerScore() {
     let startScore = parseInt(document.getElementById("computer-score").innerText);
@@ -82,7 +86,7 @@ function incrementComputerScore() {
 }
 
 
-
+//Funktion for increment the score to the winer
 
 function getScore() {
     
