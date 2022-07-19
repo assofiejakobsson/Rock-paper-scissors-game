@@ -24,6 +24,8 @@ a#btn-play {
 #btn-play {
     padding: 3px 10px 3px 10px;
     border-radius: 5px;
+    border: solid 2px;
+    font-size: 140%;
     background-color: #fff;
     color: #000;
     
@@ -54,8 +56,11 @@ a#btn-home {
 #btn-home {
     padding: 3px 10px 3px 10px;
     border-radius: 5px;
+    border: solid 2px;
+    font-size: 140%;
     background-color: #fff;
     color: #000;
+    
     
    
 }
@@ -104,6 +109,17 @@ a#btn-home {
     border-radius: 50%;
     background: url("../images/scissor.jpg") no-repeat center center;
  }
+
+ .btn-restart {
+    padding: 3px 10px 3px 10px;
+    border-radius: 5px;
+    border: solid 2px;
+    font-size: 140%;
+    background-color: #fff;
+    color: #000;
+ }
+
+
 
  
  
