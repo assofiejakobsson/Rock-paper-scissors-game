@@ -74,7 +74,7 @@ function getMessage() {
     messageDisplay.innerHTML = message;
 }
 
-//Funktion for the users score count
+//Function to add points to the user
 
 function incrementYourScore() {
     
@@ -82,7 +82,7 @@ function incrementYourScore() {
     
 }
 
-//Funktion for the computers score count
+//Function to add points to the computer
 
 function incrementComputerScore() {
     
@@ -92,7 +92,7 @@ function incrementComputerScore() {
 }
 
 
-//Funktion for increment score and reset the game score back to 0 after somone get 3 points
+//function to check the game position and give points to the winner.
 
 function getScore() {
     
