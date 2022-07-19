@@ -8,8 +8,8 @@ const allGameChoise = document.querySelectorAll("button");
 let yourChoise
 let computerChoise
 let message
-let yourScore
-let coputerScore
+let yourScore = 0
+let computerScore = 0
 
 //Grab all choise btn and functions for the users and computers choise
 
@@ -71,47 +71,66 @@ function getMessage() {
 //Funktion for the users score count
 
 function incrementYourScore() {
-    let startScore = parseInt(document.getElementById("your-score").innerText);
-    document.getElementById("your-score").innerText =  ++startScore;
+    
+    document.getElementById("your-score").innerText =  ++yourScore;
     
 }
 
 //Funktion for the computers score count
 
 function incrementComputerScore() {
-    let startScore = parseInt(document.getElementById("computer-score").innerText);
-    document.getElementById("computer-score").innerText = ++startScore;
+    
+    document.getElementById("computer-score").innerText = ++computerScore;
     
     
 }
 
 
-//Funktion for increment the score to the winer
+//Funktion for increment score and reset the game score back to 0 after somone get 3 points
 
 function getScore() {
     
     if (computerChoise === yourChoise) {
         
     }
-    if (computerChoise === "rock" && yourChoise === "paper") {
+    else if (computerChoise === "rock" && yourChoise === "paper") {
         incrementYourScore("your-score")
     }
-    if (computerChoise === "rock" && yourChoise === "scissor") {
+    else if (computerChoise === "rock" && yourChoise === "scissor") {
         incrementComputerScore("computer-score")
     }
-    if (computerChoise === "paper" && yourChoise === "scissor") {
+    else if (computerChoise === "paper" && yourChoise === "scissor") {
         incrementYourScore("your-score")
     }
-    if (computerChoise === "paper" && yourChoise === "rock") {
+    else if (computerChoise === "paper" && yourChoise === "rock") {
         incrementComputerScore("computer-score")
     }
-    if (computerChoise === "scissor" && yourChoise === "paper") {
+    else if (computerChoise === "scissor" && yourChoise === "paper") {
         incrementComputerScore("computer-score")
     }
-    if (computerChoise === "scissor" && yourChoise === "rock") {
+    else if (computerChoise === "scissor" && yourChoise === "rock") {
         incrementYourScore("your-score")
     }
     
+    if (yourScore === 3) {
+        //Game over, user win
+        message ="Congratulitions You Won";
+        yourScore = 0;
+        computerScore = 0;
+        document.getElementById("your-score").innerText = yourScore;
+        document.getElementById("computer-score").innerText = computerScore;
+
+    }
+    else if (computerScore === 3) {
+        //Game over, computer win
+        message = "Game Over";
+        yourScore = 0;
+        computerScore = 0;
+        document.getElementById("your-score").innerText = yourScore;
+        document.getElementById("computer-score").innerText = computerScore;
+
+    }
+    messageDisplay.innerHTML = message
 }
 
 
