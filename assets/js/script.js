@@ -12,6 +12,7 @@ let computerChoise;
 let message;
 let yourScore = 0;
 let computerScore = 0;
+let gameOver = false;
 
 //Grab all choise btn and functions for the users and computers choise
 
@@ -20,7 +21,10 @@ allGameChoise.forEach(allGameChoise => allGameChoise.addEventListener('click', (
     yourChoiseDisplay.innerHTML = yourChoise;
     generateComputerChoise();
     getMessage();
+    if (!gameOver) {
     getScore();
+    }
+    
 }));
 
 // Funktion for computer choise
@@ -116,24 +120,27 @@ function getScore() {
     
     if (yourScore === 3) {
         //Game over, user win
-        message ="Congratulitions You Won";
-        yourScore = 0;
-        computerScore = 0;
         
+        message ="Congratulitions You Won";
         document.getElementById("your-score").innerText = yourScore;
         document.getElementById("computer-score").innerText = computerScore;
+        gameOver = true;
 
     }
+    
+   
     else if (computerScore === 3) {
         //Game over, computer win
-        message = "Game Over";
-        yourScore = 0;
-        computerScore = 0;
         
+        message = "Game Over";
         document.getElementById("your-score").innerText = yourScore;
         document.getElementById("computer-score").innerText = computerScore;
+        gameOver = true;
 
     }
+   
+    
+   
     messageDisplay.innerHTML = message;
 }
 
