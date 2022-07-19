@@ -5,10 +5,8 @@ body {
 /*index.html*/
 
 #home-container {
-    max-width: 600px;
-    width: 100%;
-    min-height: 400px;
-    background: url("../images/background.jpg") no-repeat center center ;
+    font-size: 75%;
+    background: url("../images/background.jpg") no-repeat center center;
     text-align: center;
     padding: 25px;
     margin: 25px;
@@ -28,7 +26,7 @@ a#btn-play {
     border-radius: 5px;
     background-color: #fff;
     color: #000;
-    font-size: 160%;
+    
    
 }
 
@@ -40,9 +38,7 @@ a#btn-play {
  /*Game style*/
 
 div#game-container {
-    max-width: 600px;
-    width: 100%;
-    min-height: 400px;
+    font-size: 75%;
     text-align: center;
     padding: 25px;
     margin: 25px;
@@ -60,7 +56,7 @@ a#btn-home {
     border-radius: 5px;
     background-color: #fff;
     color: #000;
-    font-size: 160%;
+    
    
 }
 
@@ -73,7 +69,7 @@ a#btn-home {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
-    
+    font-size: 75%;
  }
 
  #user-choise-score {
@@ -84,6 +80,10 @@ a#btn-home {
    
  }
 
+
+img {
+    border-radius: 50%;
+ }
 
  
  
