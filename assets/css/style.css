@@ -27,7 +27,9 @@ h1, h2, #message {
     
 }
 
-/*index.html*/
+
+
+/*Style landing page*/
 
 #home-container {
     max-width: 400px;
@@ -44,6 +46,8 @@ h1, h2, #message {
  
 
 }
+
+/*Style button/ landing page*/
 
 a#btn-play {
     text-decoration: none;
@@ -67,16 +71,32 @@ a#btn-play {
     
  }
 
- /*Game style*/
+ /*Style game page*/
 
 div#game-container {
+    max-width: 400px;
     width: 75%;
-   font-size: 100%;
+    min-height: 350px;
+    font-size: 100%;
+    display: flex;
     text-align: center;
+    flex-direction: column;
+    justify-content: space-around;
+   
     padding: 25px;
-    margin: 25px;
+    margin: 0 auto 0 auto;
     
 }
+
+#game-container p {
+    padding-bottom: 20px;
+}
+
+div#restart-game {
+    margin-top: 35px;
+}
+
+/*Style all button/ game page*/
 
 a#btn-home {
     text-decoration: none;
