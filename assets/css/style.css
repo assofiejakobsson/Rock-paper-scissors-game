@@ -23,18 +23,24 @@ body {
 h1, h2, #message {
     
     font-family: 'Merriweather', serif;
+    padding-bottom: 20px;
     
 }
 
 /*index.html*/
 
 #home-container {
+    max-width: 400px;
     width: 75%;
-   font-size: 100%;
+    min-height: 350px;
+    font-size: 100%;
+    display: flex;
     text-align: center;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     padding: 25px;
-    margin: 25px;
- 
+    margin: 0 auto 0 auto;
  
 
 }
@@ -46,12 +52,12 @@ a#btn-play {
 }
 
 #btn-play {
-    padding: 3px 10px 3px 10px;
+    padding: 0px 10px 1px 10px;
     border-radius: 5px;
     border: solid 2px;
     font-size: 140%;
-    background-color: #fff;
-    color: #000;
+    
+    color: #c70808;
     
    
 }
