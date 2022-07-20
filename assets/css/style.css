@@ -41,7 +41,7 @@ h1, h2, #message {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding: 25px;
+    padding: 35px;
     margin: 0 auto 0 auto;
  
 
@@ -86,6 +86,14 @@ div#game-container {
     padding: 25px;
     margin: 0 auto 0 auto;
     
+}
+
+div#nav-home {
+    padding-top: 35px;
+}
+
+div#game-overview {
+    margin-top: 35px;
 }
 
 #game-container p {
