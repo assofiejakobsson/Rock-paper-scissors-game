@@ -1,5 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Oswald&display=swap');
+
+/*sets all element */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/*
+styling to be applied to the entire page*/
+
 body {
-    background-color: azure;
+    background-image: linear-gradient(#18a5a7, #d9ecc7);
+    background-size : cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 160%;
+}
+
+h1, h2, #message {
+    
+    font-family: 'Merriweather', serif;
+    
 }
 
 /*index.html*/
