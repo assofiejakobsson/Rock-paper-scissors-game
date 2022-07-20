@@ -104,30 +104,7 @@ div#restart-game {
     margin-top: 35px;
 }
 
-/*Style all button/ game page*/
 
-a#btn-home {
-    text-decoration: none;
-    
-    
-}
-
-#btn-home {
-    padding: 3px 10px 3px 10px;
-    border-radius: 5px;
-    border: solid 2px;
-    font-size: 140%;
-    background-color: #fff;
-    color: #000;
-    
-    
-   
-}
-
-#btn-home:hover {
-    color: black;
-    
- }
 
  #game-overview {
     display: flex;
@@ -148,11 +125,39 @@ a#btn-home {
 
  }
 
+ /*Style all button/ game page*/
+
+a#btn-home, a#restart {
+    text-decoration: none;
+    
+    
+}
+
+#btn-home, #restart {
+    padding: 0px 10px 1px 10px;
+    border-radius: 5px;
+    border: solid 2px;
+    font-size: 140%;
+    
+    color: #c70808;
+    
+    
+   
+}
+
+#btn-home:hover, #restart:hover {
+    color: black;
+    
+ }
+
  button#rock {
     width: 60px;
     height: 60px;
     border-radius: 50%;
     background: url("../images/rock.jpg") no-repeat center center;
+    
+    border: solid 2px;
+    color: #c70808;
  }
 
  button#paper {
@@ -160,6 +165,9 @@ a#btn-home {
     height: 60px;
     border-radius: 50%;
     background: url("../images/paper.JPG") no-repeat center center;
+
+    border: solid 2px;
+    color: #c70808;
  }
 
  button#scissor {
@@ -167,20 +175,16 @@ a#btn-home {
     height: 60px;
     border-radius: 50%;
     background: url("../images/scissor.jpg") no-repeat center center;
- }
 
- #restart {
-    padding: 3px 10px 3px 10px;
-    border-radius: 5px;
     border: solid 2px;
-    font-size: 140%;
-    background-color: #fff;
-    color: #000;
+    color: #c70808;
  }
 
- a#restart {
-    text-decoration: none;
+ button#scissor:hover, button#paper:hover, button#rock:hover  {
+    color: black;
  }
+
+
 
 
 
