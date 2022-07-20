@@ -5,7 +5,6 @@
 const computerChoiseDisplay = document.getElementById("computer-choise");
 const yourChoiseDisplay = document.getElementById("your-choise");
 const messageDisplay = document.getElementById("message");
-const scoreDisplay = document.getElementById("score");
 const allGameChoise = document.querySelectorAll("button");
 let yourChoise;
 let computerChoise;

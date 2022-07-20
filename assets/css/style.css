@@ -92,6 +92,10 @@ div#nav-home {
 
 div#game-overview {
     margin-top: 35px;
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 #game-container p {
@@ -104,24 +108,10 @@ div#restart-game {
 
 
 
- #game-overview {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    
+ div#computer-choise-score h2 {
+    padding-left: 25px;
  }
 
- #user-choise-score {
-   
- }
-
- #computer-choise-score {
-   
- }
-
- #option-area {
-
- }
 
  /*Style all button/ game page*/
 
