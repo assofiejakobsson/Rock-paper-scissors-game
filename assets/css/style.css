@@ -5,24 +5,25 @@
     border: 0;
 }
 
-/*
-styling to be applied to the entire page*/
+/*styling to be applied to the entire page*/
 
 body {
     background-image: linear-gradient(#18a5a7, #d9ecc7);
-    background-size : cover;
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
-    
+
 }
 
-h1, h2, #message {
-    
+h1,
+h2,
+#message {
+
     font-family: 'Merriweather', serif;
     padding-bottom: 20px;
-    
+
 }
 
 
@@ -41,7 +42,7 @@ h1, h2, #message {
     align-items: center;
     padding: 35px;
     margin: 0 auto 0 auto;
- 
+
 
 }
 
@@ -49,8 +50,8 @@ h1, h2, #message {
 
 a#btn-play {
     text-decoration: none;
-    
-    
+
+
 }
 
 #btn-play {
@@ -58,18 +59,18 @@ a#btn-play {
     border-radius: 5px;
     border: solid 2px;
     font-size: 140%;
-    
+
     color: #c70808;
-    
-   
+
+
 }
 
 #btn-play:hover {
     color: black;
-    
- }
 
- /*Style game page*/
+}
+
+/*Style game page*/
 
 div#game-container {
     max-width: 400px;
@@ -80,15 +81,17 @@ div#game-container {
     text-align: center;
     flex-direction: column;
     justify-content: space-around;
-   
+
     padding: 25px;
     margin: 0 auto 0 auto;
-    
+
 }
 
-div#nav-home {
-    padding-top: 35px;
+#game-container p {
+    padding-bottom: 20px;
 }
+
+/*Style the game overview */
 
 div#game-overview {
     margin-top: 35px;
@@ -98,94 +101,77 @@ div#game-overview {
     justify-content: space-around;
 }
 
-#game-container p {
-    padding-bottom: 20px;
+/*Style all button/ game page*/
+
+div#nav-home {
+    padding-top: 35px;
 }
 
 div#restart-game {
     margin-top: 35px;
 }
 
-
-
-
- div#computer-choise-score h2 {
-   
- }
-
-
- /*Style all button/ game page*/
-
-a#btn-home, a#restart {
+a#btn-home,
+a#restart {
     text-decoration: none;
-    
-    
+
 }
 
-#btn-home, #restart {
+#btn-home,
+#restart {
     padding: 0px 10px 1px 10px;
     border-radius: 5px;
     border: solid 2px;
-    font-size: 140%;
-    
     color: #c70808;
-    
-    
-   
+    font-size: 140%;
 }
 
-#btn-home:hover, #restart:hover {
+#btn-home:hover,
+#restart:hover {
     color: black;
-    
- }
 
- button#rock {
+}
+
+button#rock {
     width: 60px;
     height: 60px;
-    border-radius: 50%;
     background: url("../images/rock.jpg") no-repeat center center;
-    
+
+    border-radius: 50%;
     border: solid 2px;
     color: #c70808;
- }
+}
 
- button#paper {
+button#paper {
     width: 60px;
     height: 60px;
-    border-radius: 50%;
     background: url("../images/paper.JPG") no-repeat center center;
 
+    border-radius: 50%;
     border: solid 2px;
     color: #c70808;
- }
+}
 
- button#scissor {
+button#scissor {
     width: 60px;
     height: 60px;
-    border-radius: 50%;
     background: url("../images/scissor.jpg") no-repeat center center;
 
+    border-radius: 50%;
     border: solid 2px;
     color: #c70808;
- }
+}
 
- button#scissor:hover, button#paper:hover, button#rock:hover  {
+button#scissor:hover,
+button#paper:hover,
+button#rock:hover {
     color: black;
- }
+}
 
- @media screen and (min-width: 790px) and (max-width: 2090px) {
-      body {
+/*Make the page responsive*/
+
+@media screen and (min-width: 790px) and (max-width: 2090px) {
+    body {
         font-size: 140%;
-      }
- }
-
-
-
-
-
- 
- 
- 
- 
- 
- 
+    }
+}

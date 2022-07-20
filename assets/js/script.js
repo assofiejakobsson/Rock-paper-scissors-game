@@ -13,7 +13,7 @@ let yourScore = 0;
 let computerScore = 0;
 let gameOver = false;
 
-//Grab all choise btn and functions for the users and computers choise
+//Adds events when the user clicks on the selection buttons
 
 allGameChoise.forEach(allGameChoise => allGameChoise.addEventListener('click', (e) => {
     yourChoise = e.target.id;
@@ -21,12 +21,12 @@ allGameChoise.forEach(allGameChoise => allGameChoise.addEventListener('click', (
     generateComputerChoise();
     getMessage();
     if (!gameOver) {
-    getScore();
+        getScore();
     }
-    
+
 }));
 
-// Funktion for computer choise
+// Funktion for generate computer choise
 
 function generateComputerChoise() {
     let randomNumber = Math.floor(Math.random() * allGameChoise.length) + 1;
@@ -51,18 +51,18 @@ function getMessage() {
     }
     if (computerChoise === "rock" && yourChoise === "paper") {
         message = "You win";
-        
+
     }
     if (computerChoise === "rock" && yourChoise === "scissor") {
         message = "You lose";
     }
     if (computerChoise === "paper" && yourChoise === "scissor") {
         message = "You win";
-        
+
     }
     if (computerChoise === "paper" && yourChoise === "rock") {
         message = "You lose";
-        
+
     }
     if (computerChoise === "scissor" && yourChoise === "paper") {
         message = "You lose";
@@ -76,71 +76,60 @@ function getMessage() {
 //Function to add points to the user
 
 function incrementYourScore() {
-    
-    document.getElementById("your-score").innerText =  ++yourScore;
-    
+
+    document.getElementById("your-score").innerText = ++yourScore;
+
 }
 
 //Function to add points to the computer
 
 function incrementComputerScore() {
-    
+
     document.getElementById("computer-score").innerText = ++computerScore;
-    
-    
+
+
 }
 
 
-//function to check the game position and give points to the winner.
+//function to check the game position and give points to the winner. And end the game
 
 function getScore() {
-    
+
     if (computerChoise === yourChoise) {
-        
-    }
-    else if (computerChoise === "rock" && yourChoise === "paper") {
+
+    } else if (computerChoise === "rock" && yourChoise === "paper") {
+        incrementYourScore("your-score");
+    } else if (computerChoise === "rock" && yourChoise === "scissor") {
+        incrementComputerScore("computer-score");
+    } else if (computerChoise === "paper" && yourChoise === "scissor") {
+        incrementYourScore("your-score");
+    } else if (computerChoise === "paper" && yourChoise === "rock") {
+        incrementComputerScore("computer-score");
+    } else if (computerChoise === "scissor" && yourChoise === "paper") {
+        incrementComputerScore("computer-score");
+    } else if (computerChoise === "scissor" && yourChoise === "rock") {
         incrementYourScore("your-score");
     }
-    else if (computerChoise === "rock" && yourChoise === "scissor") {
-        incrementComputerScore("computer-score");
-    }
-    else if (computerChoise === "paper" && yourChoise === "scissor") {
-        incrementYourScore("your-score");
-    }
-    else if (computerChoise === "paper" && yourChoise === "rock") {
-        incrementComputerScore("computer-score");
-    }
-    else if (computerChoise === "scissor" && yourChoise === "paper") {
-        incrementComputerScore("computer-score");
-    }
-    else if (computerChoise === "scissor" && yourChoise === "rock") {
-        incrementYourScore("your-score");
-    }
-    
+
     if (yourScore === 3) {
         //Game over, user win
-        
-        message ="Congratulitions You Won";
+
+        message = "Congratulitions You Won";
         document.getElementById("your-score").innerText = yourScore;
         document.getElementById("computer-score").innerText = computerScore;
         gameOver = true;
 
-    }
-    
-   
-    else if (computerScore === 3) {
+    } else if (computerScore === 3) {
         //Game over, computer win
-        
+
         message = "Game Over";
         document.getElementById("your-score").innerText = yourScore;
         document.getElementById("computer-score").innerText = computerScore;
         gameOver = true;
 
     }
-   
-    
-   
+
+
+
     messageDisplay.innerHTML = message;
 }
-
-
