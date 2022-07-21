@@ -16,11 +16,11 @@ let gameOver = false;
 //Adds events when the user clicks on the selection buttons
 
 allGameChoise.forEach(allGameChoise => allGameChoise.addEventListener('click', (e) => {
+    if (!gameOver) {
     yourChoise = e.target.id;
     yourChoiseDisplay.innerHTML = yourChoise;
-    generateComputerChoise();
-    getMessage();
-    if (!gameOver) {
+        generateComputerChoise();
+        getMessage();
         getScore();
     }
 
