@@ -4,13 +4,17 @@
 
 const computerChoiseDisplay = document.getElementById("computer-choise");
 const yourChoiseDisplay = document.getElementById("your-choise");
+const restartDisplay = document.getElementById("restart");
 const messageDisplay = document.getElementById("message");
 const allGameChoise = document.querySelectorAll("button");
+const restartGame = document.getElementById("restart");
+
 let yourChoise;
 let computerChoise;
 let message;
 let yourScore = 0;
 let computerScore = 0;
+let restart;
 
 let gameOver = false;
 
@@ -28,6 +32,26 @@ allGameChoise.forEach(allGameChoise => allGameChoise.addEventListener('click', (
 
 }));
 
+restartGame.addEventListener("click", getRestart ) 
+
+
+
+function getRestart() {
+    message = "";
+    yourScore = 0;
+    computerScore = 0;
+    console.log("restart");
+    document.getElementById("your-score").innerText = yourScore;
+    document.getElementById("computer-score").innerText = computerScore;
+    messageDisplay.innerHTML = message;
+    gameOver = false;
+    
+}
+
+
+
+
+
 // Funktion for generate computer choise
 
 function generateComputerChoise() {
@@ -43,12 +67,6 @@ function generateComputerChoise() {
         computerChoise = 'paper';
     }
     computerChoiseDisplay.innerHTML = computerChoise;
-}
-
-function restScore() {
-
-    document.getElementsByClassName("score").innerText = score;
-
 }
 
 
@@ -101,10 +119,6 @@ function incrementComputerScore() {
 
 
 
-
-
-
-
 //function to check the game position and give points to the winner. And end the game
 
 function getScore() {
@@ -137,6 +151,7 @@ function getScore() {
         //Game over, computer win
 
         message = "Game Over";
+        
         document.getElementById("your-score").innerText = yourScore;
         document.getElementById("computer-score").innerText = computerScore;
         
