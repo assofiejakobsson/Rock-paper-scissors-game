@@ -48,7 +48,9 @@ The target audience for this game is adults and children who want to learn and p
 
 ![Screenshot option buttons](assets/images/screenshot-option-buttons.jpg)
 
-  - Restart button, is located at the bottom of the page. And it restarts the game. The button has the same design as the remaining buttons.
+  - Restart button, is located at the bottom of the page. And it restarts the game. 
+  This makes it easier for the user because the user can restart the game whenever he wants. And no need to wait for the game to end.
+  The button has the same design as the remaining buttons.
 
 ![Screenshot restart buttons](assets/images/screenshot-restart-button.jpg)
 
