@@ -99,6 +99,7 @@ div#game-overview {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    
 }
 
 /*Style all button/ game page*/
@@ -107,12 +108,7 @@ div#nav-home {
     padding-top: 35px;
 }
 
-div#restart-game {
-    margin-top: 35px;
-}
-
-a#btn-home,
-a#restart {
+a#btn-home {
     text-decoration: none;
 
 }
@@ -124,6 +120,11 @@ a#restart {
     border: solid 2px;
     color: #c70808;
     font-size: 140%;
+}
+
+#restart {
+    width: 65px;
+    
 }
 
 #btn-home:hover,
@@ -166,6 +167,17 @@ button#scissor:hover,
 button#paper:hover,
 button#rock:hover {
     color: black;
+}
+
+/*restart button area*/
+
+div#restart {
+    margin-top: 35px;
+}
+
+div#restart-container {
+    display: flex;
+    justify-content: center;
 }
 
 /*Make the page responsive*/
