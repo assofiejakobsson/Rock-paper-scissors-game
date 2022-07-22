@@ -11,10 +11,11 @@ The target audience for this game is adults and children who want to learn and p
 
 - __Layout__
 
-The layout is designed so that the user can quickly and easily understand and use the page.
+### The layout is designed so that the user can quickly and easily understand and use the pages and the game. The Landing page has the following feature: 
 
-  - Title, the game Name. 
+  - Title, are the game name. 
   - Game rules that are easy to read and understand. 
+    This can make the user finish reading and understand the game which makes the game more enjoyable for the user.
   - Play button, which takes the user directly to the game. Which opens in another tab. 
     This makes it easy for the user to navigate. The button has the same design as the remaining buttons in the game.
 
@@ -25,13 +26,13 @@ The layout is designed so that the user can quickly and easily understand and us
 
 - __Layout__
 
-### The layout is designed so that the user can quickly and easily understand and use the page.
+### The layout is designed so that the user can quickly and easily understand and use the page. The Game page has the following feature: 
 
-  - Home button, is located at the top of the page. And it takes the user back to the homepage in a new tab. The button has the same design as the remaining buttons.
+  - Home button, is located at the top of the page. And it takes the user back to the Landing page in a new tab. The button has the same design as the remaining buttons. This facilitates the user's navigation on the page.
   - Game selection and points. On the left, the user's choices and scores are displayed. And on the right is the computer's choice and score. This makes it easy for the user to keep track of the progress of the game.
   - Game notification, announces who wins the round and the entire game. This clarifies the result for the user. The game message is placed below the user and computer score in the center of the screen.
-  - Game selection buttons. Are placed under the game message, with a prompt to make their choice. This makes it easy for the user to understand what to do. The game selection buttons are designed with a background image of rock scissors or paper.
-  - Restart button, is located at the bottom of the page. And it refreshes the page which restarts the game. The button has the same design as the remaining buttons.
+  - Game selection buttons, are placed under the game message, with a prompt to make their choice. This makes it easy for the user to understand what to do. The game selection buttons are designed with a background image of rock scissors or paper.
+  - Restart button, is located at the bottom of the page. And it restarts the game. The button has the same design as the remaining buttons.
 
     
 ![Screenshot game page](assets/images/screenshot-game-page.jpg) 
@@ -39,7 +40,6 @@ The layout is designed so that the user can quickly and easily understand and us
 
 ## Features I want to add
 
-- __Redo the restart button so it works properly with javascript. Now it just updates the page by linking to its own page.__
 - __Images for the user's and the computer's choice.__
 - __Add so two users can play against each other.__
   
@@ -109,13 +109,13 @@ The live link can be found here - [Rock, Paper, Scissors Game](https://assofieja
 
 - __For my Game select buttons, I've used a lot of the code from Code insintute "Portfolio Project Scope-video".__
 - __I also got some help with the game over function from my mentor and tutor.__
-- __I have taken a lot of code from this [youtube video](https://www.youtube.com/watch?v=RwFeg0cEZvQ)__
-- __The color did I take from [W3Schools](https://www.w3schools.com/colors/colors_mixer.asp).__
-- __The background-image linear-gradient did I take from [W3Schools](https://www.w3schools.com/cssref/func_linear-gradient.asp).__
-- __I have used [Code-Institute-Solutions/readme-template](https://github.com/Code-Institute-Solutions/readme-template/blob/master/README.md)  for the srukture in the Read.md file.__
+- __I have get a lot of code from this [youtube video](https://www.youtube.com/watch?v=RwFeg0cEZvQ)__
+- __The code for the background-image linear-gradient did I get from [W3Schools](https://www.w3schools.com/cssref/func_linear-gradient.asp).__
+- __I have used [Code-Institute-Solutions/readme-template](https://github.com/Code-Institute-Solutions/readme-template/blob/master/README.md)  for the srukture in the README.md file.__
 
  ### Media
  
  - __The images for the selection buttons did I take from [Pixabay](https://pixabay.com/).__
+ - __The color did I take from [W3Schools](https://www.w3schools.com/colors/colors_mixer.asp).__
 
 

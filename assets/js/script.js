@@ -142,7 +142,7 @@ function getScore() {
 
 //listens for when the restart button is cliced
 
-restartGame.addEventListener("click", getRestart)
+restartGame.addEventListener("click", getRestart);
 
 
 //Adds events when the user clicks on the restart button
@@ -151,7 +151,10 @@ function getRestart() {
     message = "";
     yourScore = 0;
     computerScore = 0;
-    console.log("restart");
+    yourChoise = "";
+    computerChoise = "";
+    yourChoiseDisplay.innerHTML = yourChoise;
+    computerChoiseDisplay.innerHTML = computerChoise;
     document.getElementById("your-score").innerText = yourScore;
     document.getElementById("computer-score").innerText = computerScore;
     messageDisplay.innerHTML = message;
