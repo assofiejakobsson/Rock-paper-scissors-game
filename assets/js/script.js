@@ -11,6 +11,7 @@ let computerChoise;
 let message;
 let yourScore = 0;
 let computerScore = 0;
+
 let gameOver = false;
 
 //Adds events when the user clicks on the selection buttons
@@ -22,6 +23,7 @@ allGameChoise.forEach(allGameChoise => allGameChoise.addEventListener('click', (
         generateComputerChoise();
         getMessage();
         getScore();
+       
     }
 
 }));
@@ -42,6 +44,13 @@ function generateComputerChoise() {
     }
     computerChoiseDisplay.innerHTML = computerChoise;
 }
+
+function restScore() {
+
+    document.getElementsByClassName("score").innerText = score;
+
+}
+
 
 // Funktion for the display message depends on the users are winning or losing
 
@@ -91,6 +100,11 @@ function incrementComputerScore() {
 }
 
 
+
+
+
+
+
 //function to check the game position and give points to the winner. And end the game
 
 function getScore() {
@@ -125,8 +139,11 @@ function getScore() {
         message = "Game Over";
         document.getElementById("your-score").innerText = yourScore;
         document.getElementById("computer-score").innerText = computerScore;
+        
+        
         gameOver = true;
 
+       
     }
 
 

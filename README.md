@@ -21,7 +21,7 @@ The layout is designed so that the user can quickly and easily understand and us
     
 ![Screenshot landing page](assets/images/screenshot-landing-page.jpg) 
 
-## Landing Page
+## Game Page
 
 - __Layout__
 
@@ -39,7 +39,9 @@ The layout is designed so that the user can quickly and easily understand and us
 
 ## Features I want to add
 
+- __Redo the restart button so it works properly with javascript. Now it just updates the page by linking to its own page.__
 - __Images for the user's and the computer's choice.__
+- __Add so two users can play against each other.__
   
 
 ## Testing 
@@ -75,9 +77,12 @@ The layout is designed so that the user can quickly and easily understand and us
 - __Solved Bugs__
 
   - I had problems removing the text decoration on my link and it was because I used spaces. 
-I wrote like this, a #btn-play but I would write like this, a#btn-play.
+I wrote like this: <br>
+ a #btn-play  
+ but I would write like this: <br>
+ a#btn-play.
 
- - __Unfixed Bugs__
+- __Unfixed Bugs__
 
   - None.
 
@@ -91,6 +96,10 @@ I wrote like this, a #btn-play but I would write like this, a#btn-play.
   - From the source section in the left dropdown-menue select branch main.
   - In the right dropdown-menu for folder select /(rot).
   - Click save and the page deploy after auto-refresh.
+  - It should look like the picture below.
+
+![Screenshot deployment](assets/images/screenshot-deploy.jpg)
+
 
 The live link can be found here - [Rock, Paper, Scissors Game](https://assofiejakobsson.github.io/rock-paper-scissors-game/)
 
@@ -98,7 +107,7 @@ The live link can be found here - [Rock, Paper, Scissors Game](https://assofieja
 
 ### Content
 
-- __My Game Select Buttons I've used a lot of the code from Code insintute "Portfolio Project Scope-video".__
+- __For my Game select buttons, I've used a lot of the code from Code insintute "Portfolio Project Scope-video".__
 - __I also got some help with the game over function from my mentor and tutor.__
 - __I have taken a lot of code from this [youtube video](https://www.youtube.com/watch?v=RwFeg0cEZvQ)__
 - __The color did I take from [W3Schools](https://www.w3schools.com/colors/colors_mixer.asp).__
