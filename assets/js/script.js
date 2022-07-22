@@ -4,7 +4,6 @@
 
 const computerChoiseDisplay = document.getElementById("computer-choise");
 const yourChoiseDisplay = document.getElementById("your-choise");
-const restartDisplay = document.getElementById("restart");
 const messageDisplay = document.getElementById("message");
 const allGameChoise = document.querySelectorAll("button");
 const restartGame = document.getElementById("restart");
@@ -14,42 +13,21 @@ let computerChoise;
 let message;
 let yourScore = 0;
 let computerScore = 0;
-let restart;
-
 let gameOver = false;
 
 //Adds events when the user clicks on the selection buttons
 
 allGameChoise.forEach(allGameChoise => allGameChoise.addEventListener('click', (e) => {
     if (!gameOver) {
-    yourChoise = e.target.id;
-    yourChoiseDisplay.innerHTML = yourChoise;
+        yourChoise = e.target.id;
+        yourChoiseDisplay.innerHTML = yourChoise;
         generateComputerChoise();
         getMessage();
         getScore();
-       
+
     }
 
 }));
-
-restartGame.addEventListener("click", getRestart ) 
-
-
-
-function getRestart() {
-    message = "";
-    yourScore = 0;
-    computerScore = 0;
-    console.log("restart");
-    document.getElementById("your-score").innerText = yourScore;
-    document.getElementById("computer-score").innerText = computerScore;
-    messageDisplay.innerHTML = message;
-    gameOver = false;
-    
-}
-
-
-
 
 
 // Funktion for generate computer choise
@@ -70,7 +48,7 @@ function generateComputerChoise() {
 }
 
 
-// Funktion for the display message depends on the users are winning or losing
+// Funktion for the display message depending on the users are winning or losing
 
 function getMessage() {
     if (computerChoise === yourChoise) {
@@ -100,6 +78,7 @@ function getMessage() {
     messageDisplay.innerHTML = message;
 }
 
+
 //Function to add points to the user
 
 function incrementYourScore() {
@@ -107,6 +86,7 @@ function incrementYourScore() {
     document.getElementById("your-score").innerText = ++yourScore;
 
 }
+
 
 //Function to add points to the computer
 
@@ -116,7 +96,6 @@ function incrementComputerScore() {
 
 
 }
-
 
 
 //function to check the game position and give points to the winner. And end the game
@@ -151,17 +130,31 @@ function getScore() {
         //Game over, computer win
 
         message = "Game Over";
-        
         document.getElementById("your-score").innerText = yourScore;
         document.getElementById("computer-score").innerText = computerScore;
-        
-        
         gameOver = true;
 
-       
     }
 
-
-
     messageDisplay.innerHTML = message;
+}
+
+
+//listens for when the restart button is cliced
+
+restartGame.addEventListener("click", getRestart)
+
+
+//Adds events when the user clicks on the restart button
+
+function getRestart() {
+    message = "";
+    yourScore = 0;
+    computerScore = 0;
+    console.log("restart");
+    document.getElementById("your-score").innerText = yourScore;
+    document.getElementById("computer-score").innerText = computerScore;
+    messageDisplay.innerHTML = message;
+    gameOver = false;
+
 }
